@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-container {
+  background: url(thumb-1920-597965.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+
+.btn {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+}
+
+.video-container {
+  position: fixed;
+  background: #000;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+video {
+  max-width: 900px;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  color: coral;
+  top: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+
+.active {
+  visibility: hidden;
+  opacity: 0;
+}
